@@ -427,6 +427,49 @@ address {
 .social-link:focus .social-svg {
   fill: var(--primary-white-color);
 }
+/* ----- TEAM END ----- */
+
+/* ----- CLIENTS ----- */
+.clients-sect {
+  padding: 94px 0;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-item:hover,
+.list-item:focus {
+  border-color: var(--accent-color);
+}
+
+.logo-svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--main-fill-color);
+}
+
+.list-item:hover .logo-svg,
+.list-item:focus .logo-svg {
+  fill: var(--accent-color);
+}
+/* ----- CLIENTS END ----- */
+
 /* --- FOOTER --- */
 
 .footer {
