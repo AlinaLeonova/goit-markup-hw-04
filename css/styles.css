@@ -409,7 +409,7 @@ address {
 }
 
 .social-item:not(:last-child):not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .social-svg {
