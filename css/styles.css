@@ -6,6 +6,7 @@
   --secondary-grey-color: #f5f4fa;
   --background-color: #2f303a;
   --main-font: Roboto, sans-serif;
+  --main-fill-color: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -116,6 +117,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
 .nav-link:hover,
@@ -125,6 +127,13 @@ address {
 
 .nav-link:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-link::after {
+  content: "";
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
 }
 
 .contacts {
@@ -152,14 +161,12 @@ address {
   margin-right: 30px;
 }
 
-.contacts-item::before {
+.contacts-svg {
   width: 20px;
   height: 20px;
-  content: "";
-  margin-right: 10px;
-  /* background-image: url();
-  background-size: contain; */
+  fill: var(--primary-text-color);
 }
+
 /* HEADER END */
 
 /* --- SECTION --- */
@@ -266,6 +273,7 @@ address {
   display: block;
   content: "";
   height: 120px;
+  width: 100%;
   /* outline: 1px solid #2196f3; */
   margin-bottom: 30px;
   background-color: var(--secondary-grey-color);
@@ -273,24 +281,29 @@ address {
   background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
 }
 
 .antenna-icon:before {
   background-image: url(../images/antenna.svg);
+  background-position: 100px 25px;
 }
 
 .clock-icon:before {
   background-image: url(../images/clock.svg);
+  background-position: 100px 25px;
 }
 
 .diagram-icon:before {
   background-image: url(../images/diagram.svg);
+  background-position: 100px 25px;
 }
 
 .astronaut-icon:before {
   background-image: url(../images/astronaut.svg);
+  background-position: 100px 25px;
 }
+
 .features-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -358,7 +371,7 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .card-description {
@@ -368,11 +381,45 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .card-content {
   padding: 30px 0;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-fill-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-svg,
+.social-link:focus .social-svg {
+  fill: var(--primary-white-color);
 }
 /* --- FOOTER --- */
 
