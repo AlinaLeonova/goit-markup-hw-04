@@ -429,13 +429,19 @@ address {
   padding-bottom: 60px;
 }
 
-.footer-section {
+.footer .container {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-section {
   width: 270px;
 }
 
 .address {
   font-size: 14px;
 }
+
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -462,6 +468,18 @@ address {
   display: block;
   margin-bottom: 20px;
 }
+
+.call-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.07;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+/* ----- FOOTER END ----- */
 
 /* --- GALLERY --- */
 
