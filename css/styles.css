@@ -165,6 +165,11 @@ address {
   width: 20px;
   height: 20px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.contacts-item:hover .contacts-svg,
+.contacts-item:focus .contacts-svg {
+  fill: var(--accent-color);
 }
 
 /* HEADER END */
@@ -403,8 +408,8 @@ address {
   align-items: center;
 }
 
-.social-link:not(:last-child) {
-  margin-right: 10px;
+.social-item:not(:last-child):not(:last-child) {
+  margin-right: 20px;
 }
 
 .social-svg {
