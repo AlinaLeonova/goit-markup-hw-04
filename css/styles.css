@@ -436,10 +436,12 @@ address {
 
 .footer .footer-section {
   width: 270px;
+  margin-right: 30px;
 }
 
 .address {
   font-size: 14px;
+  margin-top: 20px;
 }
 
 .address-item:not(:last-child) {
@@ -472,11 +474,16 @@ address {
 .call-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.07;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+}
+
+.footer .socials-list {
+  align-items: baseline;
+  justify-content: flex-start;
 }
 
 .footer .social-link {
